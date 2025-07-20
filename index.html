@@ -1,269 +1,320 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vynix - Stream Unlimited</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="app">
-      <!-- Header -->
-      <header class="header">
-        <div class="container">
-          <div class="nav">
-            <div class="logo">
-              <h1>VYNIX</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vynix - Future of Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>VYNIX</h1>
+                <span class="logo-glow"></span>
             </div>
-            <nav class="nav-menu">
-              <a href="#" class="nav-link active">Home</a>
-              <a href="#" class="nav-link">Movies</a>
-              <a href="#" class="nav-link">TV Shows</a>
-              <a href="#" class="nav-link">My List</a>
-            </nav>
-            <div class="nav-actions">
-              <button class="search-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <path d="m21 21-4.35-4.35"></path>
-                </svg>
-              </button>
-              <div class="profile">
-                <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Profile" class="profile-img">
-              </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#movies" class="nav-link">Movies</a></li>
+                <li><a href="#series" class="nav-link">Series</a></li>
+                <li><a href="#trending" class="nav-link">Trending</a></li>
+                <li><a href="#genres" class="nav-link">Genres</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="text" placeholder="Search content..." class="search-input">
+                <i class="fas fa-search search-icon"></i>
             </div>
-          </div>
         </div>
-      </header>
+    </nav>
 
-      <!-- Hero Section -->
-      <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
         <div class="hero-content">
-          <div class="container">
-            <div class="hero-info">
-              <h1 class="hero-title">Stranger Things</h1>
-              <p class="hero-description">
-                When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.
-              </p>
-              <div class="hero-actions">
-                <button class="btn btn-primary">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <polygon points="5,3 19,12 5,21"></polygon>
-                  </svg>
-                  Play
-                </button>
-                <button class="btn btn-secondary">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="12"></line>
-                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                  </svg>
-                  More Info
-                </button>
-              </div>
+            <div class="hero-text">
+                <h1 class="hero-title">FUTURE OF ENTERTAINMENT</h1>
+                <p class="hero-subtitle">Experience cinema like never before with cutting-edge streaming technology</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Start Watching
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="hero-bg">
-          <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Hero Background">
-          <div class="hero-overlay"></div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="main-content">
+        <!-- Trending Now -->
+        <section class="content-section" id="trending">
+            <h2 class="section-title">
+                <i class="fas fa-fire"></i>
+                Trending Now
+            </h2>
+            <div class="content-slider">
+                <div class="content-grid">
+                    <div class="content-card" data-title="Cyber Revolution" data-year="2024" data-genre="Sci-Fi">
+                        <div class="card-image">
+                            <div class="placeholder-image cyber"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Cyber Revolution</h3>
+                                    <p>2024 • Sci-Fi • 4K</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-card" data-title="Neon City" data-year="2024" data-genre="Action">
+                        <div class="card-image">
+                            <div class="placeholder-image neon"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Neon City</h3>
+                                    <p>2024 • Action • HDR</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card" data-title="Digital Dreams" data-year="2024" data-genre="Drama">
+                        <div class="card-image">
+                            <div class="placeholder-image digital"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Digital Dreams</h3>
+                                    <p>2024 • Drama • 4K</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card" data-title="Quantum Shift" data-year="2024" data-genre="Thriller">
+                        <div class="card-image">
+                            <div class="placeholder-image quantum"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Quantum Shift</h3>
+                                    <p>2024 • Thriller • HDR</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card" data-title="Neural Network" data-year="2024" data-genre="Sci-Fi">
+                        <div class="card-image">
+                            <div class="placeholder-image neural"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Neural Network</h3>
+                                    <p>2024 • Sci-Fi • 4K</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Movies Section -->
+        <section class="content-section" id="movies">
+            <h2 class="section-title">
+                <i class="fas fa-film"></i>
+                Movies
+            </h2>
+            <div class="content-slider">
+                <div class="content-grid">
+                    <div class="content-card" data-title="Matrix Reborn" data-year="2024" data-genre="Sci-Fi">
+                        <div class="card-image">
+                            <div class="placeholder-image matrix"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Matrix Reborn</h3>
+                                    <p>2024 • Sci-Fi • 4K</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card" data-title="Hologram" data-year="2024" data-genre="Adventure">
+                        <div class="card-image">
+                            <div class="placeholder-image hologram"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Hologram</h3>
+                                    <p>2024 • Adventure • HDR</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card" data-title="Synthwave" data-year="2024" data-genre="Action">
+                        <div class="card-image">
+                            <div class="placeholder-image synthwave"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Synthwave</h3>
+                                    <p>2024 • Action • 4K</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card" data-title="Binary Code" data-year="2024" data-genre="Mystery">
+                        <div class="card-image">
+                            <div class="placeholder-image binary"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Binary Code</h3>
+                                    <p>2024 • Mystery • HDR</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Series Section -->
+        <section class="content-section" id="series">
+            <h2 class="section-title">
+                <i class="fas fa-tv"></i>
+                Series
+            </h2>
+            <div class="content-slider">
+                <div class="content-grid">
+                    <div class="content-card" data-title="Future Protocol" data-year="2024" data-genre="Sci-Fi">
+                        <div class="card-image">
+                            <div class="placeholder-image protocol"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Future Protocol</h3>
+                                    <p>2024 • Sci-Fi • Season 1</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card" data-title="Cyber Chronicles" data-year="2024" data-genre="Drama">
+                        <div class="card-image">
+                            <div class="placeholder-image chronicles"></div>
+                            <div class="card-overlay">
+                                <div class="card-info">
+                                    <h3>Cyber Chronicles</h3>
+                                    <p>2024 • Drama • Season 2</p>
+                                    <div class="card-buttons">
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="info-btn"><i class="fas fa-info"></i></button>
+                                        <button class="like-btn"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>VYNIX</h3>
+                <p>The future of entertainment streaming</p>
+            </div>
+            <div class="footer-section">
+                <h4>Content</h4>
+                <ul>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#series">TV Series</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Technology</h4>
+                <ul>
+                    <li><a href="#">4K Streaming</a></li>
+                    <li><a href="#">HDR Support</a></li>
+                    <li><a href="#">AI Recommendations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
         </div>
-      </section>
-
-      <!-- Content Sections -->
-      <main class="main-content">
-        <div class="container">
-          <!-- Trending Now -->
-          <section class="content-row">
-            <h2 class="row-title">Trending Now</h2>
-            <div class="movie-row">
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Dark Mystery</h3>
-                  <p>2023 • Thriller</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991471/pexels-photo-7991471.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Space Odyssey</h3>
-                  <p>2023 • Sci-Fi</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991580/pexels-photo-7991580.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Urban Legends</h3>
-                  <p>2023 • Horror</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991581/pexels-photo-7991581.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Night Vision</h3>
-                  <p>2023 • Action</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991582/pexels-photo-7991582.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Digital Dreams</h3>
-                  <p>2023 • Drama</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991583/pexels-photo-7991583.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Neon Nights</h3>
-                  <p>2023 • Crime</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Popular Movies -->
-          <section class="content-row">
-            <h2 class="row-title">Popular Movies</h2>
-            <div class="movie-row">
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991584/pexels-photo-7991584.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Cyber Punk</h3>
-                  <p>2023 • Action</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991585/pexels-photo-7991585.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Future World</h3>
-                  <p>2023 • Sci-Fi</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991586/pexels-photo-7991586.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Shadow Hunter</h3>
-                  <p>2023 • Fantasy</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991587/pexels-photo-7991587.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Lost City</h3>
-                  <p>2023 • Adventure</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991588/pexels-photo-7991588.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Time Traveler</h3>
-                  <p>2023 • Sci-Fi</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991589/pexels-photo-7991589.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="Movie">
-                <div class="movie-info">
-                  <h3>Ocean Deep</h3>
-                  <p>2023 • Thriller</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- TV Shows -->
-          <section class="content-row">
-            <h2 class="row-title">TV Shows</h2>
-            <div class="movie-row">
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991590/pexels-photo-7991590.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="TV Show">
-                <div class="movie-info">
-                  <h3>Dark Series</h3>
-                  <p>2023 • 3 Seasons</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991591/pexels-photo-7991591.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="TV Show">
-                <div class="movie-info">
-                  <h3>Mind Games</h3>
-                  <p>2023 • 2 Seasons</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991592/pexels-photo-7991592.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="TV Show">
-                <div class="movie-info">
-                  <h3>Tech Wars</h3>
-                  <p>2023 • 4 Seasons</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991593/pexels-photo-7991593.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="TV Show">
-                <div class="movie-info">
-                  <h3>Virtual Reality</h3>
-                  <p>2023 • 1 Season</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991594/pexels-photo-7991594.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="TV Show">
-                <div class="movie-info">
-                  <h3>Code Breakers</h3>
-                  <p>2023 • 2 Seasons</p>
-                </div>
-              </div>
-              <div class="movie-card">
-                <img src="https://images.pexels.com/photos/7991595/pexels-photo-7991595.jpeg?auto=compress&cs=tinysrgb&w=300&h=450&fit=crop" alt="TV Show">
-                <div class="movie-info">
-                  <h3>Digital Age</h3>
-                  <p>2023 • 3 Seasons</p>
-                </div>
-              </div>
-            </div>
-          </section>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VYNIX. All rights reserved. | Future-powered streaming platform</p>
         </div>
-      </main>
+    </footer>
 
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-content">
-            <div class="footer-section">
-              <h3>VYNIX</h3>
-              <p>Stream unlimited movies and TV shows</p>
-            </div>
-            <div class="footer-section">
-              <h4>Company</h4>
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Press</a></li>
-              </ul>
-            </div>
-            <div class="footer-section">
-              <h4>Support</h4>
-              <ul>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-            <div class="footer-section">
-              <h4>Follow Us</h4>
-              <div class="social-links">
-                <a href="#" class="social-link">Facebook</a>
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">Instagram</a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <p>&copy; 2023 Vynix. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
